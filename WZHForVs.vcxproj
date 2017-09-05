@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06A61D9B-5B49-4F88-B7D9-F762CDF7CB76}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>STM32F40_41xxx;__VS</NMakePreprocessorDefinitions>
+    <ExecutablePath />
+    <IncludePath>$(solutionDir)User;$(solutionDir)Library\inc;$(solutionDir)Driver;C:\Keil_v5\ARM\ARMCC\include;$(solutionDir)CMSIS;$(solutionDir)User\devices;$(solutionDir)User\MAP;$(solutionDir)User\devices\eMPL;$(solutionDir)User\drivers;$(solutionDir)User\LCD_driver</IncludePath>
+    <ReferencePath>
+    </ReferencePath>
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\GZZ\Desktop\wzh\User;C:\Users\GZZ\Desktop\wzh\User\MAP;C:\Users\GZZ\Desktop\wzh\User\LCD_driver;C:\Users\GZZ\Desktop\wzh\User\drivers;C:\Users\GZZ\Desktop\wzh\User\devices\eMPL;C:\Users\GZZ\Desktop\wzh\User\devices;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Documents\Tencent Files\475616534\FileRecv\WS2811.c" />
+    <ClCompile Include="cmsis\system_stm32f4xx.c" />
+    <ClCompile Include="driver\stm32f4xx_it.c" />
+    <ClCompile Include="library\src\misc.c" />
+    <ClCompile Include="library\src\stm32f4xx_adc.c" />
+    <ClCompile Include="library\src\stm32f4xx_can.c" />
+    <ClCompile Include="library\src\stm32f4xx_cec.c" />
+    <ClCompile Include="library\src\stm32f4xx_crc.c" />
+    <ClCompile Include="library\src\stm32f4xx_cryp.c" />
+    <ClCompile Include="library\src\stm32f4xx_cryp_aes.c" />
+    <ClCompile Include="library\src\stm32f4xx_cryp_des.c" />
+    <ClCompile Include="library\src\stm32f4xx_cryp_tdes.c" />
+    <ClCompile Include="library\src\stm32f4xx_dac.c" />
+    <ClCompile Include="library\src\stm32f4xx_dbgmcu.c" />
+    <ClCompile Include="library\src\stm32f4xx_dcmi.c" />
+    <ClCompile Include="library\src\stm32f4xx_dfsdm.c" />
+    <ClCompile Include="library\src\stm32f4xx_dma.c" />
+    <ClCompile Include="library\src\stm32f4xx_dma2d.c" />
+    <ClCompile Include="library\src\stm32f4xx_dsi.c" />
+    <ClCompile Include="library\src\stm32f4xx_exti.c" />
+    <ClCompile Include="library\src\stm32f4xx_flash.c" />
+    <ClCompile Include="library\src\stm32f4xx_flash_ramfunc.c" />
+    <ClCompile Include="library\src\stm32f4xx_fmc.c" />
+    <ClCompile Include="library\src\stm32f4xx_fmpi2c.c" />
+    <ClCompile Include="library\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="library\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="library\src\stm32f4xx_hash.c" />
+    <ClCompile Include="library\src\stm32f4xx_hash_md5.c" />
+    <ClCompile Include="library\src\stm32f4xx_hash_sha1.c" />
+    <ClCompile Include="library\src\stm32f4xx_i2c.c" />
+    <ClCompile Include="library\src\stm32f4xx_iwdg.c" />
+    <ClCompile Include="library\src\stm32f4xx_lptim.c" />
+    <ClCompile Include="library\src\stm32f4xx_ltdc.c" />
+    <ClCompile Include="library\src\stm32f4xx_pwr.c" />
+    <ClCompile Include="library\src\stm32f4xx_qspi.c" />
+    <ClCompile Include="library\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="library\src\stm32f4xx_rng.c" />
+    <ClCompile Include="library\src\stm32f4xx_rtc.c" />
+    <ClCompile Include="library\src\stm32f4xx_sai.c" />
+    <ClCompile Include="library\src\stm32f4xx_sdio.c" />
+    <ClCompile Include="library\src\stm32f4xx_spdifrx.c" />
+    <ClCompile Include="library\src\stm32f4xx_spi.c" />
+    <ClCompile Include="library\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="library\src\stm32f4xx_tim.c" />
+    <ClCompile Include="library\src\stm32f4xx_usart.c" />
+    <ClCompile Include="library\src\stm32f4xx_wwdg.c" />
+    <ClCompile Include="User\Actions.cpp" />
+    <ClCompile Include="User\advancedTask.c" />
+    <ClCompile Include="user\common.c" />
+    <ClCompile Include="User\devices\ADC.c" />
+    <ClCompile Include="User\devices\Beep.c" />
+    <ClCompile Include="User\devices\bsp_flash.c" />
+    <ClCompile Include="User\devices\CameraFlash.c" />
+    <ClCompile Include="User\devices\eMPL\inv_mpu.c" />
+    <ClCompile Include="User\devices\eMPL\inv_mpu_dmp_motion_driver.c" />
+    <ClCompile Include="User\devices\eMPL\mpu_dmp_api.c" />
+    <ClCompile Include="User\devices\eMPL\mpu_dmp_useapi.c" />
+    <ClCompile Include="User\devices\eMPL\mpu_user_api.c" />
+    <ClCompile Include="User\devices\I2C.c" />
+    <ClCompile Include="User\devices\KEY.c" />
+    <ClCompile Include="User\devices\lcd.c" />
+    <ClCompile Include="User\devices\LED.c" />
+    <ClCompile Include="User\devices\motorEncoder.c" />
+    <ClCompile Include="User\devices\MPU6050.c" />
+    <ClCompile Include="User\devices\PhotoSwitch.c" />
+    <ClCompile Include="User\devices\RCC.c" />
+    <ClCompile Include="User\devices\sen2020.c" />
+    <ClCompile Include="User\devices\stm32_iic.c" />
+    <ClCompile Include="User\devices\TIM.c" />
+    <ClCompile Include="User\devices\USART.c" />
+    <ClCompile Include="User\devices\USART_DMA.c" />
+    <ClCompile Include="User\devices\WS2811.c" />
+    <ClCompile Include="User\drivers\buttonIR.c" />
+    <ClCompile Include="User\drivers\FlashOperation.c" />
+    <ClCompile Include="User\drivers\LobotServoController.c" />
+    <ClCompile Include="User\drivers\motor.c" />
+    <ClCompile Include="User\drivers\RespCom.c" />
+    <ClCompile Include="User\ExceptionFunction.c" />
+    <ClCompile Include="User\Flash_driver\Flash.c" />
+    <ClCompile Include="User\LCD_driver\LCD_print.c" />
+    <ClCompile Include="User\LCD_driver\LCD_show.c" />
+    <ClCompile Include="User\LobotServoController.c" />
+    <ClCompile Include="user\main.cpp" />
+    <ClCompile Include="User\mainmap.cpp" />
+    <ClCompile Include="User\MAP\map.cpp" />
+    <ClCompile Include="User\MAP\mapNode.cpp" />
+    <ClCompile Include="User\MAP\mappath.cpp" />
+    <ClCompile Include="User\myMath.cpp" />
+    <ClCompile Include="User\ProcessFunctions.cpp" />
+    <ClCompile Include="User\string.c" />
+    <ClCompile Include="User\task.cpp" />
+    <ClCompile Include="User\track.c" />
+    <ClCompile Include="User\Travel.cpp" />
+    <ClCompile Include="User\Treasure.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Documents\Tencent Files\475616534\FileRecv\WS2811.h" />
+    <ClInclude Include="cmsis\core_cm4.h" />
+    <ClInclude Include="cmsis\core_cm4_simd.h" />
+    <ClInclude Include="cmsis\core_cmFunc.h" />
+    <ClInclude Include="cmsis\core_cmInstr.h" />
+    <ClInclude Include="cmsis\core_cmSimd.h" />
+    <ClInclude Include="cmsis\system_stm32f4xx.h" />
+    <ClInclude Include="Driver\stm32f4xx.h" />
+    <ClInclude Include="driver\stm32f4xx_conf.h" />
+    <ClInclude Include="driver\stm32f4xx_it.h" />
+    <ClInclude Include="library\inc\misc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_adc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_can.h" />
+    <ClInclude Include="library\inc\stm32f4xx_cec.h" />
+    <ClInclude Include="library\inc\stm32f4xx_crc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_cryp.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dac.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dbgmcu.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dcmi.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dfsdm.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dma.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dma2d.h" />
+    <ClInclude Include="library\inc\stm32f4xx_dsi.h" />
+    <ClInclude Include="library\inc\stm32f4xx_exti.h" />
+    <ClInclude Include="library\inc\stm32f4xx_flash.h" />
+    <ClInclude Include="library\inc\stm32f4xx_flash_ramfunc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_fmc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_fmpi2c.h" />
+    <ClInclude Include="library\inc\stm32f4xx_fsmc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_gpio.h" />
+    <ClInclude Include="library\inc\stm32f4xx_hash.h" />
+    <ClInclude Include="library\inc\stm32f4xx_i2c.h" />
+    <ClInclude Include="library\inc\stm32f4xx_iwdg.h" />
+    <ClInclude Include="library\inc\stm32f4xx_lptim.h" />
+    <ClInclude Include="library\inc\stm32f4xx_ltdc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_pwr.h" />
+    <ClInclude Include="library\inc\stm32f4xx_qspi.h" />
+    <ClInclude Include="library\inc\stm32f4xx_rcc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_rng.h" />
+    <ClInclude Include="library\inc\stm32f4xx_rtc.h" />
+    <ClInclude Include="library\inc\stm32f4xx_sai.h" />
+    <ClInclude Include="library\inc\stm32f4xx_sdio.h" />
+    <ClInclude Include="library\inc\stm32f4xx_spdifrx.h" />
+    <ClInclude Include="library\inc\stm32f4xx_spi.h" />
+    <ClInclude Include="library\inc\stm32f4xx_syscfg.h" />
+    <ClInclude Include="library\inc\stm32f4xx_tim.h" />
+    <ClInclude Include="library\inc\stm32f4xx_usart.h" />
+    <ClInclude Include="library\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="User\Actions.h" />
+    <ClInclude Include="User\advancedTask.h" />
+    <ClInclude Include="user\common.h" />
+    <ClInclude Include="User\devices\ADC.h" />
+    <ClInclude Include="User\devices\Beep.h" />
+    <ClInclude Include="User\devices\bsp_flash.h" />
+    <ClInclude Include="User\devices\CameraFlash.h" />
+    <ClInclude Include="User\devices\cfont.h" />
+    <ClInclude Include="User\devices\eMPL\dmpKey.h" />
+    <ClInclude Include="User\devices\eMPL\dmpmap.h" />
+    <ClInclude Include="User\devices\eMPL\inv_mpu.h" />
+    <ClInclude Include="User\devices\eMPL\inv_mpu_dmp_motion_driver.h" />
+    <ClInclude Include="User\devices\eMPL\mpu_dmp_api.h" />
+    <ClInclude Include="User\devices\eMPL\mpu_dmp_useapi.h" />
+    <ClInclude Include="User\devices\eMPL\mpu_user_api.h" />
+    <ClInclude Include="User\devices\I2C.h" />
+    <ClInclude Include="User\devices\KEY.h" />
+    <ClInclude Include="User\devices\lcd.h" />
+    <ClInclude Include="User\devices\LED.h" />
+    <ClInclude Include="User\devices\motorEncoder.h" />
+    <ClInclude Include="User\devices\MPU6050.h" />
+    <ClInclude Include="User\devices\PhotoSwitch.h" />
+    <ClInclude Include="User\devices\RCC.h" />
+    <ClInclude Include="User\devices\sen2020.h" />
+    <ClInclude Include="User\devices\stm32_iic.h" />
+    <ClInclude Include="User\devices\TIM.h" />
+    <ClInclude Include="User\devices\USART.h" />
+    <ClInclude Include="User\devices\USART_DMA.h" />
+    <ClInclude Include="User\devices\WS2811.h" />
+    <ClInclude Include="User\drivers\buttonIR.h" />
+    <ClInclude Include="User\drivers\FlashOperation.h" />
+    <ClInclude Include="User\drivers\LobotServoController.h" />
+    <ClInclude Include="User\drivers\motor.h" />
+    <ClInclude Include="User\drivers\RespCom.h" />
+    <ClInclude Include="User\ExceptionFunction.h" />
+    <ClInclude Include="User\Flash_driver\Flash.h" />
+    <ClInclude Include="User\LCD_driver\LCD_print.h" />
+    <ClInclude Include="User\LCD_driver\LCD_show.h" />
+    <ClInclude Include="User\LobotServoController.h" />
+    <ClInclude Include="user\main.h" />
+    <ClInclude Include="User\maincpp.h" />
+    <ClInclude Include="User\mainmap.h" />
+    <ClInclude Include="User\MAP\map.h" />
+    <ClInclude Include="User\MAP\mapNode.h" />
+    <ClInclude Include="User\MAP\mappath.h" />
+    <ClInclude Include="User\myMath.h" />
+    <ClInclude Include="User\preProcesser.h" />
+    <ClInclude Include="User\ProcessFunctions.h" />
+    <ClInclude Include="User\task.h" />
+    <ClInclude Include="User\track.h" />
+    <ClInclude Include="User\Travel.h" />
+    <ClInclude Include="User\Treasure.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exported-2017-08-06.vssettings" />
+    <None Include="prj\FourAxis.build_log.htm" />
+    <None Include="prj\FourAxis.htm" />
+    <None Include="python\qrcode.py" />
+    <None Include="python\qrCodeRead.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

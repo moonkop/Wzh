@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmsis\system_stm32f4xx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\stm32f4xx_it.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_adc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_can.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_cec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_cryp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_cryp_aes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_cryp_des.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_cryp_tdes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dbgmcu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dcmi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dfsdm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dma2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_dsi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_exti.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_flash_ramfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_fmc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_fmpi2c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_fsmc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_gpio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_hash_md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_hash_sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_i2c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_iwdg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_lptim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_ltdc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_pwr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_qspi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_rcc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_rng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_rtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_sai.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_sdio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_spdifrx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_spi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_syscfg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_tim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_usart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stm32f4xx_wwdg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\sen2020.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\TIM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\USART.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\USART_DMA.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\ADC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\lcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\LED.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\RCC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\track.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\motorEncoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\KEY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\KEY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\mainmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\MAP\map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\MAP\mapNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\MAP\mappath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\myMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\eMPL\inv_mpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\eMPL\inv_mpu_dmp_motion_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\eMPL\mpu_user_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\stm32_iic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\MPU6050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\ProcessFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\LCD_driver\LCD_print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\LCD_driver\LCD_show.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\drivers\buttonIR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\drivers\LobotServoController.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\drivers\motor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\drivers\RespCom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\LobotServoController.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Actions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\eMPL\mpu_dmp_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\eMPL\mpu_dmp_useapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\I2C.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\Beep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\bsp_flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\PhotoSwitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\WS2811.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\advancedTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\devices\CameraFlash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\ExceptionFunction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\drivers\FlashOperation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Travel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Treasure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Documents\Tencent Files\475616534\FileRecv\WS2811.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\Flash_driver\Flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cmsis\core_cm4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmsis\core_cm4_simd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmsis\core_cmFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmsis\core_cmInstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmsis\core_cmSimd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmsis\system_stm32f4xx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\stm32f4xx_conf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\stm32f4xx_it.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_adc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_can.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_cec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_cryp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dbgmcu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dcmi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dfsdm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dma2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_dsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_exti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_flash_ramfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_fmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_fmpi2c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_fsmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_gpio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_i2c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_iwdg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_lptim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_ltdc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_pwr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_qspi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_rcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_rng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_rtc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_sai.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_sdio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_spdifrx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_spi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_syscfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_tim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_usart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\inc\stm32f4xx_wwdg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\stm32f4xx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\LED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\sen2020.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\TIM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\USART.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\USART_DMA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\ADC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\cfont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\lcd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\RCC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\track.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\motorEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\KEY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\KEY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\mainmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\MAP\mapNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\MAP\mappath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\MAP\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\maincpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\myMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\dmpKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\dmpmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\inv_mpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\inv_mpu_dmp_motion_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\mpu_user_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\stm32_iic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\MPU6050.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\ProcessFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\LCD_driver\LCD_print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\LCD_driver\LCD_show.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\drivers\buttonIR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\drivers\LobotServoController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\drivers\motor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\drivers\RespCom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\LobotServoController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Actions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\mpu_dmp_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\eMPL\mpu_dmp_useapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\Beep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\bsp_flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\preProcesser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\PhotoSwitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\WS2811.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\advancedTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\devices\CameraFlash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\ExceptionFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\drivers\FlashOperation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Travel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Treasure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Documents\Tencent Files\475616534\FileRecv\WS2811.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User\Flash_driver\Flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prj\FourAxis.build_log.htm" />
+    <None Include="prj\FourAxis.htm" />
+    <None Include="python\qrcode.py" />
+    <None Include="python\qrCodeRead.py" />
+    <None Include="Exported-2017-08-06.vssettings" />
+  </ItemGroup>
+</Project>
