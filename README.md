@@ -1,2 +1,2 @@
 # Wzh
-the robot car since 2017.8
+this is a legecy project since 2017.8
